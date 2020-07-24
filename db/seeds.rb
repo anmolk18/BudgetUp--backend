@@ -15,15 +15,15 @@ Income.reset_pk_sequence
 Expense.destroy_all
 Expense.reset_pk_sequence
 
-u1 = User.create(name: "Anmol", username: "anna", password_digest: '123')
-u2 = User.create(name: "Pam", username: "pammy", password_digest: '1234')
+u1 = User.create(name: "Anmol", username: "anna", password: '123')
+u2 = User.create(name: "Pam", username: "pammy", password: '1234')
 
 b1 = Budget.create(user_id: u1.id, value: 500)
 b2 = Budget.create(user_id: u2.id, value: 400)
 
 i1 = Income.create(user_id: u1.id, name: "SWE job", value: 1000)
-i2 = Income.create(user_id: u2.id, name: "teaching job", value: 800)
+i2 = Income.create(user_id: u2.id, name: "Teaching job", value: 800)
 
-e1 = Expense.create(user_id: u1.id, name: "groceries", value: 300)
-e2 = Expense.create(user_id: u2.id, name: "fuel", value: 400)
-e3 = Expense.create(user_id: u1.id, name: "water bill", value: 200)
+e1 = Expense.create(user_id: u1.id, name: "Groceries", value: 300)
+e2 = Expense.create(user_id: u2.id, name: "Fuel", value: 400)
+e3 = Expense.create(user_id: u1.id, name: "Water bill", value: 200)

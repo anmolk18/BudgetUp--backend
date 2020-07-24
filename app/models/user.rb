@@ -1,8 +1,9 @@
 class User < ApplicationRecord
+    has_secure_password
     has_one :budget
     has_many :incomes 
     has_many :expenses
 
-    validates :name, :username, :password_digest, presence: true
+    validates :username, :password, presence: true
     validates :username, uniqueness: true
 end
