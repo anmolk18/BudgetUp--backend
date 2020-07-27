@@ -28,7 +28,7 @@ class Api::V1::UsersController < ApplicationController
         user = User.new(user_params)
         if user.valid?
             user.save
-            render json: {username: user.username, token: encode_token({user_id: user.id} )}
+            render json: {username: user.username, id: user.id, token: encode_token({user_id: user.id} )}
         else
             render json: {error: "Failed to create a user"}, status: :not_acceptable
           end
