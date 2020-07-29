@@ -1,24 +1,19 @@
-# README
+# BudgetUp (Backend)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+BudgetUp allows users to monitor their budget by keeping track of their incomes and expenses.
 
-Things you may want to cover:
+View screenshots of the website [here](https://drive.google.com/drive/folders/1BYtu40e1FP1vBbmL1lf-cSJnLIwwVx3u?usp=sharing).
 
-* Ruby version
+## Technologies 
 
-* System dependencies
+### Front-End:
+* HTML
+* CSS
+* JavaScript
 
-* Configuration
+### Back-end:
+* Ruby on Rails 
 
-* Database creation
+View the frontend repository [here](https://github.com/anmolk18/BudgetUp).
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Developed by [Anmolpreet Kaur](https://github.com/anmolk18)
