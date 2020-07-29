@@ -8,8 +8,6 @@
 
 User.destroy_all
 User.reset_pk_sequence
-Budget.destroy_all
-Budget.reset_pk_sequence
 Income.destroy_all
 Income.reset_pk_sequence
 Expense.destroy_all
@@ -17,9 +15,6 @@ Expense.reset_pk_sequence
 
 u1 = User.create(name: "Anmol", username: "anna", password: '123')
 u2 = User.create(name: "Pam", username: "pammy", password: '1234')
-
-b1 = Budget.create(user_id: u1.id, value: 500)
-b2 = Budget.create(user_id: u2.id, value: 400)
 
 i1 = Income.create(user_id: u1.id, name: "SWE job", value: 5000)
 i2 = Income.create(user_id: u1.id, name: "Babysitting", value: 600)
